@@ -20,6 +20,8 @@ export default (props)=>{
             mensagem: mensagem
         });
     }
+
+    const forms = [{type: "textarea", name_input:'mensagem', id_input: "cmensagem", text_label:"Mensagem"}]
     return(
         <>
             <Header/>
@@ -28,9 +30,7 @@ export default (props)=>{
                 <h4>Fale Conosco</h4>
                 <p>Preencha o formulario para enviar sua mensagem</p>
                 <form>
-                    <Form/>
-                    <label id="labelmsg" htmlFor="mensagem">Mensagem:</label>
-                    <textarea id="cmensagem" name="mensagem" rows="15" cols="95"></textarea>
+                    <Form list={forms}/>
                     <button onClick={enviar}>Enviar</button>
                 </form>
             </section>
