@@ -21,7 +21,7 @@ export default (props)=>{
                 <Route path="/casas" component={Houses}/>
                 <Route path="/sobre" component={About}/>
                 <Route path="/associar_se" component={Assosiation}/>
-                <Route path="/desaassociar_se" component={Desassociation}/>
+                <Route path="/desassociar_se" component={Desassociation}/>
                 <Route path="/fale_conosco" component={TalkWithUs}/>
             </Switch>
         </BrowserRouter>
