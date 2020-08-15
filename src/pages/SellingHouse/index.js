@@ -6,9 +6,9 @@ import Form from '../../components/Form';
 
 export default (props)=>{
     const forms = [
-        {type: "input", name_input:'rua', id_input: "crua", text_label:"Rua"},
-        {type: "input", name_input:'numero', id_input: "cnumero", text_label:"Numero"},
-        {type: "textarea", name_input:'descricao', id_input: "cdescricao", text_label:"Descrição"},
+        {id: 1, type: "input", name_input:'rua', id_input: "crua", text_label:"Rua"},
+        {id: 2, type: "input", name_input:'numero', id_input: "cnumero", text_label:"Numero"},
+        {id: 3, type: "textarea", name_input:'descricao', id_input: "cdescricao", text_label:"Descrição"},
 
     ];
     return(

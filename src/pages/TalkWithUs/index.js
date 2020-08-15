@@ -21,20 +21,14 @@ export default (props)=>{
         });
     }
 
-    const forms = [{type: "textarea", name_input:'mensagem', id_input: "cmensagem", text_label:"Mensagem"}]
+    const forms = [{id: 1, type: "textarea", name_input:'mensagem', id_input: "cmensagem", text_label:"Mensagem"}]
     return(
         <>
             <Header/>
             <Menu/>
-            <section id="sect">
                 <h4>Fale Conosco</h4>
                 <p>Preencha o formulario para enviar sua mensagem</p>
-                <form>
-                    <Form list={forms}/>
-                    <button onClick={enviar}>Enviar</button>
-                </form>
-            </section>
-            
+                <Form list={forms} actionClick={enviar}/>
             <Footer/>
         </>
     );
