@@ -14,7 +14,7 @@ export default function(props){
             <Nav.Link href="/">Inicial</Nav.Link>
             <Nav.Link href="/sobre">Sobre</Nav.Link>
             <Nav.Link href="/casas">Casas e terrenos</Nav.Link>
-            <Nav.Link href="/">Vender</Nav.Link>
+            <Nav.Link href="/vender">Vender</Nav.Link>
             <NavDropdown title="Entre em contato" id="basic-nav-dropdown">
               <NavDropdown.Item href="/associar_se">Assossiar</NavDropdown.Item>
               <NavDropdown.Item href="/desassociar_se">Desassociar</NavDropdown.Item>

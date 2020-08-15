@@ -8,17 +8,12 @@ export default (props)=>{
     const forms = [
         {type: "input", name_input:'rua', id_input: "crua", text_label:"Rua"},
         {type: "input", name_input:'num_casa', id_input: "cnum_casa", text_label:"Numero"}
-    ]
+    ];
     return(
     <>
         <Header/>
         <Menu/>
-        <section id="sect">
-            <form>
-                <Form list={forms}/>
-                <button>Associar</button>
-            </form>
-        </section>
+        <Form list={forms}/>
         <Footer/>
     </>
     );

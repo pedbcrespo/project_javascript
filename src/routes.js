@@ -11,6 +11,7 @@ import Assosiation from './pages/Assosiation';
 import Desassociation from './pages/Desassociation';
 import TalkWithUs from './pages/TalkWithUs';
 import About from './pages/About';
+import SellingHouse from './pages/SellingHouse';
 
 export default (props)=>{
     return(
@@ -23,6 +24,7 @@ export default (props)=>{
                 <Route path="/associar_se" component={Assosiation}/>
                 <Route path="/desassociar_se" component={Desassociation}/>
                 <Route path="/fale_conosco" component={TalkWithUs}/>
+                <Route path="/vender" component={SellingHouse}/>
             </Switch>
         </BrowserRouter>
     );
