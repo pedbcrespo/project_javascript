@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Routes from './routes';
 import './App.css';
 
-export default class App extends Component{
-  
-  render(){
+export default (props)=>{
     return (
       <div className="App">
         <Routes/>
       </div>
     );
-  }
 }
