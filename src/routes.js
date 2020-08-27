@@ -12,7 +12,8 @@ import Desassociation from './pages/Desassociation';
 import TalkWithUs from './pages/TalkWithUs';
 import About from './pages/About';
 import SellingHouse from './pages/SellingHouse';
-
+import BuyingHouse from './pages/BuyingHouse';
+import RentingHouse from './pages/RentingHouse';
 export default (props)=>{
     return(
         <BrowserRouter>
@@ -25,6 +26,8 @@ export default (props)=>{
                 <Route path="/desassociar_se" component={Desassociation}/>
                 <Route path="/fale_conosco" component={TalkWithUs}/>
                 <Route path="/vender" component={SellingHouse}/>
+                <Route path="/comprar/:idlote/:num_lote" component={BuyingHouse}/>
+                <Route path="/alugar/:idlote/:num_lote" component={RentingHouse}/>
             </Switch>
         </BrowserRouter>
     );

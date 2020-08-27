@@ -5,7 +5,8 @@ export default (props)=>{
         return props.list.map(elem=>{
             return <>
                 <label key={elem.id} htmlFor={elem.name_input}>{elem.text_label}</label>
-                {elem.type === "input"? <input type="text" name={elem.name_input} id={elem.id_input}/>:<textarea id={elem.id_input} name={elem.name_input} rows="15" cols="95"></textarea> }
+                {elem.type === "input"? <input type="text" name={elem.name_input} id={elem.id_input} value={elem.value_input}/>:<textarea id={elem.id_input} name={elem.name_input} rows="15" cols="95"></textarea> }
+
             </> 
         });
     }
